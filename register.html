@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login and Registration form example</title>
+<style>
+
+body{
+margin: 100px;
+text-align: center;
+align: center;
+}
+ 
+input[type=text],[type=password],[type=number]{
+width: 30%;
+margin: 8px 0;
+padding: 7px 10px;
+display: inline-block;
+border:1px solid #ccc;
+box-sizing: border-box;
+}
+button{
+display:inline-block;
+padding:0.46em 1.6em;
+border:0.1em solid #000000;
+margin:0 0.2em 0.2em 0;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#000000;
+text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+background-color:#FFFFFF;
+text-align:center;
+transition: all 0.15s;
+}
+button:hover{
+text-shadow: 0 0 2em rgba(255,255,255,1);
+color:#FFFFFF;
+border-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+button{
+display:block;
+margin:0.4em auto;
+}
+}
+ 
+#em{
+margin-left:30px;
+}
+</style>
+</head>
+ 
+<body bgcolor="#E6E6FA">
+ 
+<form name="regi" action="register1.jsp" method="post">
+<h2>GET YOURSELF REGISTERED</h2>
+ 
+<label for="r1" id="fn">First Name :</label>
+<input type="text" name="fname" id="r1"><br/>
+ 
+<label  for="r2" id="ln">Last Name :</label>
+<input type="text" name="lname" id="r2"><br/>
+ 
+<label  for="r3" id="un">Username :</label>
+<input type="text" name="uname" id="r3"><br/>
+ 
+<label  for="r4" id="pwd">Password :</label>
+<input type="password" name="pass" id="r4"><br/>
+ 
+<label  for="r5" id="em">Email :</label>
+<input type="text" name="email" id="r5"><br/>
+ 
+<label  for="r6" id="mn">Mobile No :</label>
+<input type="text" name="mno" id="r6"><br/>
+ 
+<label for="r8" id="cy">City:</label>
+ 
+<select name="ct" id="r8">
+<option>Select</option>
+<option>Pune</option>
+<option>Mumbai</option>
+<option>Raigad</option>
+<option>Nagpur</option>
+<option>Nasik</option>
+<option>Raigad</option>
+<option>Nagar</option>
+<option>Kolhapur</option>
+<option>Solapur</option>
+</select><br/><br/>
+ 
+<button type="submit" value="Submit" id="button">Register</button>
+<a href="login.html">Back to Home</a>
+ 
+</form>
+ </body>
+</html>
